@@ -34,15 +34,15 @@ class Calculator:
         self.result = addition(a, b)
         return  self.result
 
-    def __sub__(self, a, b):
+    def sub(self, a, b):
         self.result = subtraction(a, b)
         return  self.result
 
-    def __mul__(self, a, b):
+    def mul(self, a, b):
         self.result = multiplication(a, b)
         return  self.result
 
-    def __div__(self, a, b):
+    def div(self, a, b):
         self.result = division(a, b)
         return self.result
 
