@@ -7,7 +7,7 @@ class MyTestCase(unittest.TestCase):
 
     def test_instantiate_calculator(self):
         calculator = Calculator()
-        #self.assertIsInstance(calculator, Calculator())
+        self.assertIsInstance(calculator, Calculator)
 
     def test_addition(self):
         calculator=Calculator()
@@ -88,15 +88,8 @@ class MyTestCase(unittest.TestCase):
             x = int(row[0])
             y = int(row[1])
 
-            r = calculator.squareroot(x)
+            r = calculator.squareRoot(x)
             self.assertEqual(r, y)
-
-
-
-
-
-
-
 
 
 

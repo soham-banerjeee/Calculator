@@ -46,8 +46,8 @@ class Calculator:
         self.result = division(a, b)
         return self.result
 
-    def __square__(self, a):
+    def square(self, a):
         self.result =square(a)
 
-    def __squareRoot__(self, a):
+    def squareRoot(self, a):
         self.result = math.sqrt(a)
