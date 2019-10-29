@@ -66,7 +66,7 @@ class MyTestCase(unittest.TestCase):
     def square(self):
         calculator = Calculator()
         test_data_row_list = list()
-        csv_reader = csv.reader(open("./src/div.csv", 'r'), delimiter=',')
+        csv_reader = csv.reader(open("./src/square.csv", 'r'), delimiter=',')
         next(csv_reader)
         for row in csv_reader:
             test_data_row_list.append(row)
@@ -76,6 +76,21 @@ class MyTestCase(unittest.TestCase):
 
             r = calculator.square(x)
             self.assertEqual(r, y)
+
+    def squareRoot(self):
+        calculator = Calculator()
+        test_data_row_list = list()
+        csv_reader = csv.reader(open("./src/squareroot.csv", 'r'), delimiter=',')
+        next(csv_reader)
+        for row in csv_reader:
+            test_data_row_list.append(row)
+        for row in test_data_row_list:
+            x = int(row[0])
+            y = int(row[1])
+
+            r = calculator.squareroot(x)
+            self.assertEqual(r, y)
+
 
 
 
