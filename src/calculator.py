@@ -16,13 +16,13 @@ def division(a, b):
     c = b / a
     return round(c,9)
 
-def square(a):
+def squared(a):
     c = a * a
     return c
 
 def squareRoot(a):
     math.sqrt(a)
-    return c
+    return round(c,8)
 
 class Calculator:
     result = 0
@@ -47,7 +47,9 @@ class Calculator:
         return self.result
 
     def square(self, a):
-        self.result =square(a)
+        self.result =squared(a)
+        return self.result
 
     def squareRoot(self, a):
         self.result = math.sqrt(a)
+        return self.result
