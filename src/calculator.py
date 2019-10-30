@@ -21,7 +21,7 @@ def squared(a):
     return c
 
 def squareRoot(a):
-    math.sqrt(a)
+    c = math.sqrt(a)
     return round(c,8)
 
 class Calculator:
@@ -51,5 +51,5 @@ class Calculator:
         return self.result
 
     def squareRoot(self, a):
-        self.result = math.sqrt(a)
+        self.result =squareRoot(a)
         return self.result
