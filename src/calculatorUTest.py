@@ -80,6 +80,7 @@ class MyTestCase(unittest.TestCase):
             self.assertEqual(r, y)
 
     def test_squareRoot(self):
+
         calculator = Calculator()
         test_data_row_list = list()
         csv_reader = csv.reader(open("./src/squareroot.csv", 'r'), delimiter=',')
